@@ -1,7 +1,6 @@
 ### Neighbourhood
 - By Mary Kamau
-- Github link: https://github.com/
-- marykamau2/Neighbourhood.git
+- Github link: https://github.com/marykamau2/Neighbourhood.git
 
 
 
@@ -21,8 +20,7 @@
 ### Setup and Installation
 -To get the project :
 
-- Clone the repository:
-_ https://github.com/marykamau2/Neighbourhood.git 
+- Clone the repository: https://github.com/marykamau2/Neighbourhood.git 
 ### Install and activate Virtual
 - python3 -m venv virtual 
 - source virtual/bin/activate  
@@ -33,20 +31,17 @@ _ https://github.com/marykamau2/Neighbourhood.git
 ### Setup Database
 - SetUp your database User,Password, Host then make migrations:
 
--python manage.py makemigrations ghood
-_ Then Migrate:
-
 ## python manage.py migrate 
 - Run the application
 - python manage.py runserver 
 ### Testing the application
-_ python manage.py test 
-_ Open the application on your browser 127.0.0.1:8000.
+python manage.py test 
+Open the application on your browser 127.0.0.1:8000.
 
 ### Technology used
 - Python3.6
-- Django 1.11
-_ Heroku
+- Django
+
 ### Known Bugs
 There are no known bugs at the moment.
 ### Contact Information
