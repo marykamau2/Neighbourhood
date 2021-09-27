@@ -13,10 +13,10 @@ class SignUpForm(UserCreationForm):
         fields = ('username', 'email', 'password1', 'password2')
 
 
-# class UpdateProfileForm(forms.ModelForm):
-#     class Meta:
-#         model = Profile
-#         exclude = ('user', 'neighbourhood')
+class UpdateProfileForm(forms.ModelForm):
+    class Meta:
+        model = Profile
+        exclude = ('user', 'neighbourhood')
 
 
 # class NeighbourHoodForm(forms.ModelForm):
