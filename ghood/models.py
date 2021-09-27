@@ -25,29 +25,29 @@ class Profile(models.Model):
         instance.profile.save()
 
 
-# class Neighbourhood(models.Model):
-#     name = models.CharField(max_length=50)
-#     location = models.CharField(max_length=60)
-#     admin = models.ForeignKey("Profile", on_delete=models.CASCADE, related_name='hood')
-#     neighbourhood_logo = models.ImageField(upload_to='images/')
-#     description = models.TextField()
-#     healthcenter_number = models.IntegerField(null=True, blank=True)
-#     police_number = models.IntegerField(null=True, blank=True)
-#     occupants_count = models.IntegerField(null=True, blank=True)
+class Neighbourhood(models.Model):
+    name = models.CharField(max_length=50)
+    location = models.CharField(max_length=60)
+    admin = models.ForeignKey("Profile", on_delete=models.CASCADE, related_name='hood')
+    neighbourhood_logo = models.ImageField(upload_to='images/')
+    description = models.TextField()
+    healthcenter_number = models.IntegerField(null=True, blank=True)
+    police_number = models.IntegerField(null=True, blank=True)
+    occupants_count = models.IntegerField(null=True, blank=True)
 
 
-#     def __str__(self):
-#         return f'{self.name} hood'
+    def __str__(self):
+        return f'{self.name} hood'
 
-#     def save_neighborhood(self):
-#         self.save()
+    def save_neighborhood(self):
+        self.save()
 
-#     def delete_neighborhood(self):
-#         self.delete()
+    def delete_neighborhood(self):
+        self.delete()
 
-#     @classmethod
-#     def find_neighborhood(cls, neighborhood_id):
-#         return cls.objects.filter(id=neighborhood_id)
+    @classmethod
+    def find_neighborhood(cls, neighborhood_id):
+        return cls.objects.filter(id=neighborhood_id)
 
 
 # class Business(models.Model):
