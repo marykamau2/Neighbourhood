@@ -1,0 +1,47 @@
+<!-- <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color" style="background-color:rgb(11, 12, 12)">
+    <a class="navbar-brand" href="{% url 'index' %}">Mary-Hood</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+      aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'index' %}">Home
+            <span class="sr-only">(current)</span>
+          </a>
+      </ul>
+      
+      {% if user.is_authenticated %}
+      <ul class="navbar-nav ml-auto nav-flex-icons"> 
+        <li class="nav-item">
+          <img class="rounded-circle nav-img" src="{{ user.profile.profile_picture.url }}" alt="" style="height: 40px">
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+          </a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333" style="background-color: rgb(62, 167, 216)" class="text-success">
+            <a class="dropdown-item" href="{% url 'edit-profile' user.username %}">Update Profile</a>
+            <a class="dropdown-item" href="{% url 'profile' user.username %}">View Profile</a>
+            <a class="dropdown-item" href="{% url 'logout' %}">Log Out</a>
+          </div>
+        </li>
+        <li class="nav-item active" style="padding-top: 10px"><span class="text-white">{{user.username|title}}</span></li>
+        
+      </ul>
+      {% else %}
+      <ul class="navbar-nav ml-auto nav-flex-icons">
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'login' %}">Log In</a>
+        </li>
+  
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'signup' %}">Sign Up</a>
+        </li>
+      </ul>
+        {% endif %}
+          
+    </div>
+  </nav>
+   -->
