@@ -1,5 +1,5 @@
-# from django.apps import AppConfig
+from django.apps import AppConfig
 
 
-# class GhoodConfig(AppConfig):
-#     name = 'ghood'
+class GhoodConfig(AppConfig):
+    name = 'ghood'
